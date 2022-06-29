@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>jquery</h1>
+
+
+
+<p>제이 쿼리 연습 페이지 입니다.</p>  
+
+
+
+<div>
+	<button type="button">버튼</button>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+// DOM 생성된 직후 작동한다.
+$(document).ready(function(){
+	alert("레디");	
+});
+
+/*
+$(window).load(function(){
+	alert("로드");
+}); 
+*/
+
+
+
+var act = function(){
+	console.log("로드");
+};
+
+$(window).load(act);
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>

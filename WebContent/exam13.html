@@ -2,17 +2,30 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
 	<div>
-		<input id="btn" type="button" VALUE="js테스트버튼" />
-		<h1 id="display">이름출력영역</h1>
+		<button id="btn" type="button"> js 테스트 버튼</button>
+		
+		<h3 id="display">이름출력 영역</h3>
 	</div>
 
 </body>
+<script type="text/javascript">
 
+//$("[type='button']").text("소준호");
+
+$("#btn").on("click", function(){
+	console.log("클릭");
+	
+	var tag = $("#display");
+	tag.text("홍길동");
+	
+});
+
+</script>
 
 
 </html>
